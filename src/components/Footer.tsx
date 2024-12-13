@@ -3,8 +3,9 @@ import { Facebook, Github, Instagram, Mail } from "lucide-react"
 
 const Footer = () => {
   return (
-    <section className="bg-gray-900 flex justify-between p-6 text-white font-medium text-xl sticky rounded-xl">
-     <div>
+    <section className="container justify-center mx-auto">
+      <div className="bg-gray-400 flex justify-between p-4 text-gray-800 font-medium text-xl rounded-lg">
+      <div>
       <h1>
        Let's connect ...!
       </h1>
@@ -25,6 +26,8 @@ const Footer = () => {
         </button>
       </a>
     </div>
+      </div>
+     
     </section>
   )
 }

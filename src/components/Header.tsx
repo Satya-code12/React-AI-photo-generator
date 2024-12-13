@@ -1,10 +1,19 @@
 const Header: React.FC = () => {
  return (
-   <section className="flex justify-between items-center gap-4">
+   <section className="flex justify-between items-center gap-4 p-1">
      <div className="w-[28rem] flex flex-col gap-4">
-       <h1 className="text-3xl font-bold text-gray-800">GenPic AI</h1>
-       <p className="text-xl font-medium text-gray-700">Welcome to our innovative AI-powered React application! </p>
-       <p className="font-medium text-gray-700">This app combines the power of artificial intelligence with the versatility of React to provide a seamless and interactive user experience.</p>
+       <h1 className="text-3xl font-bold text-gray-700"
+       style={{
+        letterSpacing : "1px"
+       }}>GenPic AI</h1>
+       <p className="text-xl font-medium text-gray-600" 
+       style={{
+        letterSpacing : "1.5px"
+       }}>Welcome to our innovative AI-powered React application! </p>
+       <p className="font-medium text-gray-600"
+       style={{
+        letterSpacing : "1.5px"
+       }}>This app combines the power of artificial intelligence with the versatility of React to provide a seamless and interactive user experience.</p>
      </div>
      <div className="grid grid-cols-2 gap-4">
        <img

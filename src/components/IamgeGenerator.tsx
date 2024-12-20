@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'; 
 import axios from 'axios'; 
+import toast from 'react-hot-toast';
 
 
-const Content = () => {
+const Content = ()=> {
   const [text, setText] = useState(''); 
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false); 
@@ -36,8 +37,11 @@ const Content = () => {
       console.log('API Response:', response);
       setImages(response.data.results.images); 
       setCurrentIndex(0); 
-    } catch (error) {
-      console.error('Error generating image:', error);
+      toast.success("Succesfully Fetched")
+    } catch (error : any) {
+      // console.error('Error generating image:', error);
+      const errorMessage = error.response?.data?.message || error.message || 'Error generating image';
+      toast.error(errorMessage);
     } finally {
       setLoading(false); 
     }

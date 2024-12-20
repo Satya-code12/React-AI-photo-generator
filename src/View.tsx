@@ -3,6 +3,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Content from './components/IamgeGenerator';
+import { Toaster } from 'react-hot-toast';
 // import TextToImageGenerator from './components/TextToImageGenerator';
 // import "@fontsource/poppins";
 const View: React.FC = () =>{
@@ -15,6 +16,7 @@ const View: React.FC = () =>{
     </div>
     <div>
     <Content/>
+    <Toaster position='top-center'/>
     <Footer />
     </div>
     </section>
